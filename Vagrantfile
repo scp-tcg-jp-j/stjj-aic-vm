@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
 
   # 共有フォルダ設定。ここでコケる場合はvagrant plugin install vagrant-vbguestを叩く（多分）
   # サーバーサイドのローカルリポジトリと共有
-  config.vm.synced_folder "../repo/stjj-aic-server", "/home/vagrant/repo/stjj-aic-server"
+  config.vm.synced_folder "../stjj-aic-server", "/home/vagrant/repo/stjj-aic-server"
 
   config.vm.provider "virtualbox" do |vb|
     vb.cpus = 1
